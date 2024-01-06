@@ -51,10 +51,6 @@ public class MovePuff : MonoBehaviour
         Vector3 moveDirection = new Vector3(_moveInput.x, 0.0f, _moveInput.y);
         transform.position += moveDirection * speed;
 
-        Vector3 fallDirection = new Vector3(0.0f, -_gravityValue, 0.0f);
-        if (transform.position.y > 0+ _playerSize) { 
-            transform.position += fallDirection * fallSpeed;
-        }
     }
 
 
