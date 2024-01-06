@@ -7,6 +7,9 @@ public class MovePuff : MonoBehaviour
     private float speed = .05f; //Used to control speed of Puff
 
     [SerializeField]
+    private float fallSpeed = -.098f; //Used to control speed of Puff
+
+    [SerializeField]
     private InputActionReference move;
 
     [SerializeField]
@@ -18,19 +21,25 @@ public class MovePuff : MonoBehaviour
     // Jump Variables
     private Vector3 _playerVelocity;
 
+    public float _playerSize = 0.4f;
+
     private bool _groundedPlayer;
 
     private float _jumpHeight = 5.0f;
 
     private bool _jumpPressed = false;
 
-    private float _gravityValue = -9.81f;
+    private float _gravityValue = -.0981f;
+
+    private GameObject playerObj = null;
 
     // Start is called before the first frame update
     void start()
     {
+        playerObj = GameObject.Find("Puff");
         _characterController = GetComponent < CharacterController>();
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -41,6 +50,11 @@ public class MovePuff : MonoBehaviour
     {
         Vector3 moveDirection = new Vector3(_moveInput.x, 0.0f, _moveInput.y);
         transform.position += moveDirection * speed;
+
+        Vector3 fallDirection = new Vector3(0.0f, -_gravityValue, 0.0f);
+        if (transform.position.y > 0+ _playerSize) { 
+            transform.position += fallDirection * fallSpeed;
+        }
     }
 
 
