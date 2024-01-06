@@ -380,6 +380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puff
       objectReference: {fileID: 0}
+    - target: {fileID: 4081831348842136499, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4204897945729888745, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3777846
@@ -419,6 +423,10 @@ PrefabInstance:
     - target: {fileID: 4204897945729888745, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413017261353810640, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
