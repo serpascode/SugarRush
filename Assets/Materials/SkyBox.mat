@@ -95,11 +95,11 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FloorBlendIntensity: 2
+    - _FloorBlendIntensity: 0.01
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HorizonBlendIntensity: 2
+    - _HorizonBlendIntensity: 0.47
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -118,7 +118,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FloorColor: {r: 0.6745098, g: 1, b: 0.8156863, a: 0}
+    - _FloorColor: {r: 0.6509433, g: 1, b: 0.71417993, a: 0}
     - _HorizonColor: {r: 0.74509805, g: 0.99607843, b: 1, a: 0}
     - _SkyColor: {r: 0.44313726, g: 0.8235294, b: 1, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
